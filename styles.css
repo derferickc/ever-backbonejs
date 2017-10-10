@@ -1,0 +1,66 @@
+.randomize-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#randomize_button {
+  padding: 12px 20px;
+  background-color: #ff4000;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+#randomize_button:hover {
+  cursor: pointer;
+}
+
+.mySlides {
+  text-align: center;
+}
+
+.song_info {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+}
+
+.song_info > img {
+  width: 100%;
+  outline: 1px solid #D0D0D0;
+}
+
+.song_info_styling {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.song_info_styling > span {
+  font-weight: normal;
+}
+
+#title_styling {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: 20px 0;
+  position: relative;
+  margin: auto;
+}
+
+.prev_arrow, .next_arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  color: #ff4000;
+  font-size: 50px;
+}
+
+.next_arrow {
+  right: 2.5%;
+}

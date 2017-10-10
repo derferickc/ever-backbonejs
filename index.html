@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script type = "text/javascript" src = "https://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+  <script type = "text/javascript" src = "https://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+  <script src = "main.js"></script>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="randomize-container">
+    <button id="randomize_button">Randomize</button>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carouselSlides fade">
+      <div class="song_info">
+        <img class="album_image_1">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_1"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_1"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_1"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_2">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_2"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_2"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_2"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_3">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_3"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_3"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_3"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_4">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_4"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_4"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_4"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carouselSlides fade">
+      <div class="song_info">
+        <img class="album_image_5">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_5"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_5"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_5"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_6">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_6"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_6"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_6"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_7">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_7"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_7"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_7"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_8">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_8"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_8"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_8"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carouselSlides fade">
+      <div class="song_info">
+        <img class="album_image_9">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_9"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_9"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_9"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_10">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_10"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_10"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_10"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_11">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_11"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_11"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_11"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_12">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_12"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_12"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_12"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carouselSlides fade">
+      <div class="song_info">
+        <img class="album_image_13">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_13"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_13"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_13"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_14">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_14"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_14"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_14"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_15">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_15"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_15"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_15"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_16">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_16"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_16"></span></div>
+          <div class="song_info_styling">Price: <span class="track_price_16"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carouselSlides fade">
+      <div class="song_info">
+        <img class="album_image_17">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_17"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_17"></span></div>
+          <div class="song_info_styling">Price: $<span class="track_price_17"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_18">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_18"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_18"></span></div>
+          <div class="song_info_styling">Price: $<span class="track_price_18"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_19">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_19"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_19"></span></div>
+          <div class="song_info_styling">Price: $<span class="track_price_19"></span></div>
+        </div>
+      </div>
+      <div class="song_info">
+        <img class="album_image_20">
+        <div id="title_styling">
+          <div class="song_info_styling">Artist: <span class="artist_name_20"></span></div>
+          <div class="song_info_styling">Title: <span class="song_title_20"></span></div>
+          <div class="song_info_styling">Price: $<span class="track_price_20"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <a class="prev_arrow" onclick="next()">&#10094;</a>
+    <a class="next_arrow" onclick="prev()">&#10095;</a>
+  </div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function next() {
+    showSlides(slideIndex += -1);
+  }
+
+  function prev() {
+    showSlides(slideIndex += 1);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("carouselSlides");
+    $(".prev_arrow").show();
+    $(".next_arrow").show();
+
+    if (n == slides.length) {
+      $(".next_arrow").hide();
+    }
+    if (n == 1) {
+      $(".prev_arrow").hide();
+    }  
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+  }
+</script>
+
+</body>
+</html> 
