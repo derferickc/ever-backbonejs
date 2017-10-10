@@ -191,8 +191,8 @@
       </div>
     </div>
 
-    <a class="prev_arrow" onclick="next()">&#10094;</a>
-    <a class="next_arrow" onclick="prev()">&#10095;</a>
+    <a class="prev_arrow" onclick="prev()">&#10094;</a>
+    <a class="next_arrow" onclick="next()">&#10095;</a>
   </div>
 </div>
 
@@ -200,11 +200,11 @@
   var slideIndex = 1;
   showSlides(slideIndex);
 
-  function next() {
+  function prev() {
     showSlides(slideIndex += -1);
   }
 
-  function prev() {
+  function next() {
     showSlides(slideIndex += 1);
   }
 
@@ -221,7 +221,7 @@
       $(".prev_arrow").hide();
     }  
 
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
     slides[slideIndex-1].style.display = "block";  
