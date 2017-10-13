@@ -18,6 +18,7 @@ Carousel
 * Clicking the carousel-prev button class triggers the "prev" event, where the current position of the carousel is decreased by 1
 
 * Algorithm explanation:
+
     initialize:
         * Bind value of "this" to be used in multiple child functions
         * All parent slide divs within the item array are mapped to be hidden and returned as a variabe, i
@@ -40,17 +41,6 @@ Carousel
         * The new slide number is faded in Using jQuery
         * carousel-next button is shown (for the case that you are moving from slide 5 to 4)
         ** Edge case: if the current slide number is equal to 0 (first slide), hide the carousel-prev button via jQuery
-
-    * Store all the slides in array variable, “slides”, by using jQuery command, “document.getElementsByClassName("carouselSlides"
-    * Start the index of the carousel at 1 (first slide)
-    * Set all slides divs to display as none by looping through the length of the “slides” array
-    * Display the current slide by displaying it as a block element within the slides array
-        * Unless stated by the edge cases to do otherwise, show the previous and next arrows
-    * Edge cases:
-        * If the index of the slide is on 1, disable the previous button by hiding it (jQuery)
-        * If the index of the slide is on the length of slides variable, disable the next button by hiding it (jQuery)
-    * next() function increases the slideIndex by 1, updating which slide to display, and which to hide
-    * prev() function decreases the slideIndex by 1, updating which slide to display, and which to hide
 
 styles.css
 * Stylesheet used to style the carousel, randomize button, and previous / next buttons
