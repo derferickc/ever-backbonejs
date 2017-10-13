@@ -19,23 +19,23 @@ Carousel
 
 * Algorithm explanation:
 
-    initialize:
+    * initialize:
         * Bind value of "this" to be used in multiple child functions
         * All parent slide divs within the item array are mapped to be hidden and returned as a variabe, i
         * The current slide and first slide is set to 0
         * The previous carousel button is set to be hidden using jQuery on slide 0
 
-    render:
+    * render:
         * The current item array is showed using jQuery
 
-    next:
+    * next:
         * The current slide array is faded out Using jQuery
         * The current slide count is increased by 1
         * The new slide number is faded in Using jQuery
         * carousel-prev button is shown (for the case that you are initially moving from slide 1 to 2)
         ** Edge case: if the current slide number reaches 5 (last slide), hide the carousel-next button via jQuery
 
-    prev:
+    * prev:
         * The current slide array is faded out Using jQuery
         * The current slide count is decreased by 1
         * The new slide number is faded in Using jQuery
