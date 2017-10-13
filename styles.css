@@ -19,6 +19,18 @@
   text-align: center;
 }
 
+.carouselSlides .carousel-prev {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.carouselSlides .carousel-next {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
 .song_info {
   display: inline-block;
   width: 24%;
@@ -51,7 +63,7 @@
   margin: auto;
 }
 
-.prev_arrow, .next_arrow {
+.carousel-next, .carousel-prev {
   cursor: pointer;
   position: absolute;
   top: 30%;

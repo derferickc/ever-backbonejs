@@ -1,11 +1,19 @@
 theView = Backbone.View.extend({
 
-	el: ".slideshow-container",
 	events: {
-	    'click #randomize_button' :'randomizeArray'
+	    'click #randomize_button' :'randomizeArray',
+	    'click .carousel-prev': 'prev',
+      	'click .carousel-next': 'next'
 	},
 
-	initialize: function() {
+	initialize: function(options) {
+		_.bindAll(this);
+        this.items = _.map(this.$('.carouselSlides').hide(), function(i) { 
+        	return i; 
+        });
+        this.current = 0;
+		$(".carousel-prev").hide();
+
 		songsArray = [];
 		$.getJSON( "https://itunes.apple.com/search?term=the+beatles", function( json ) {
 			for (var i=1; i <21; i++) {
@@ -55,8 +63,35 @@ theView = Backbone.View.extend({
 			$('.' + trackPrice).text(songAlbumPrice)
 		}
     },
+
+    render: function() {
+      $(this.items[this.current]).show();
+      return this;
+    },
+
+    prev: function() {
+      $(this.items[this.current]).fadeOut(function() {
+      	$(".carousel-next").show();
+        this.current = this.current - 1;
+        $(this.items[this.current]).fadeIn();
+        if (this.current === 0) {
+        	$(".carousel-prev").hide();
+        }
+      }.bind(this));
+    },
+
+    next: function() {
+      $(this.items[this.current]).fadeOut(function() {
+		$(".carousel-prev").show();
+        this.current = this.current + 1;
+        $(this.items[this.current]).fadeIn();
+        if (this.current === this.items.length -1) {
+        	$(".carousel-next").hide();
+        }
+      }.bind(this));
+    }
 });
 
 $(document).ready(function(){
-	var carouselView = new theView();
+	var carouselView = new theView({el: '#carousel-container'}).render();
 });

@@ -11,12 +11,14 @@
 <body>
 
 <div class="slideshow-container">
-  <div class="randomize-container">
-    <button id="randomize_button">Randomize</button>
-  </div>
+  <div id="carousel-container">
 
-  <div class="carousel-container">
-    <div class="carouselSlides fade">
+    <div class="randomize-container">
+      <button id="randomize_button">Randomize</button>
+    </div>
+
+    <div class="carouselSlides">
+      <button class="carousel-prev">&laquo;</button>
       <div class="song_info">
         <img class="album_image_1">
         <div id="title_styling">
@@ -49,9 +51,12 @@
           <div class="song_info_styling">Price: <span class="track_price_4"></span></div>
         </div>
       </div>
+      <button class="carousel-next">&raquo;</button>
     </div>
 
-    <div class="carouselSlides fade">
+    <div class="carouselSlides">
+      <button class="carousel-prev">&laquo;</button>
+
       <div class="song_info">
         <img class="album_image_5">
         <div id="title_styling">
@@ -84,9 +89,11 @@
           <div class="song_info_styling">Price: <span class="track_price_8"></span></div>
         </div>
       </div>
+      <button class="carousel-next">&raquo;</button>
     </div>
 
-    <div class="carouselSlides fade">
+    <div class="carouselSlides">
+      <button class="carousel-prev">&laquo;</button>
       <div class="song_info">
         <img class="album_image_9">
         <div id="title_styling">
@@ -119,9 +126,11 @@
           <div class="song_info_styling">Price: <span class="track_price_12"></span></div>
         </div>
       </div>
+      <button class="carousel-next">&raquo;</button>
     </div>
 
-    <div class="carouselSlides fade">
+    <div class="carouselSlides">
+      <button class="carousel-prev">&laquo;</button>
       <div class="song_info">
         <img class="album_image_13">
         <div id="title_styling">
@@ -154,9 +163,11 @@
           <div class="song_info_styling">Price: <span class="track_price_16"></span></div>
         </div>
       </div>
+      <button class="carousel-next">&raquo;</button>
     </div>
 
-    <div class="carouselSlides fade">
+    <div class="carouselSlides">
+      <button class="carousel-prev">&laquo;</button>
       <div class="song_info">
         <img class="album_image_17">
         <div id="title_styling">
@@ -189,44 +200,11 @@
           <div class="song_info_styling">Price: $<span class="track_price_20"></span></div>
         </div>
       </div>
+      <button class="carousel-next">&raquo;</button>
     </div>
 
-    <a class="prev_arrow" onclick="prev()">&#10094;</a>
-    <a class="next_arrow" onclick="next()">&#10095;</a>
   </div>
 </div>
-
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function prev() {
-    showSlides(slideIndex += -1);
-  }
-
-  function next() {
-    showSlides(slideIndex += 1);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("carouselSlides");
-    $(".prev_arrow").show();
-    $(".next_arrow").show();
-
-    if (n == slides.length) {
-      $(".next_arrow").hide();
-    }
-    if (n == 1) {
-      $(".prev_arrow").hide();
-    }  
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-  }
-</script>
 
 </body>
 </html> 
